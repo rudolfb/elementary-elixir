@@ -15,10 +15,10 @@ The post_install.sh actually installs Erlang, Elixir and Phoenix using asdf.
 
 - [x] **Enable PPA**
 
-	```bash
-	sudo apt -y update
-	sudo apt install -y software-properties-common
-	```
+```bash
+sudo apt -y update
+sudo apt install -y software-properties-common
+```
 
 - [x] **Install apt-fast**
 
