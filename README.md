@@ -3,8 +3,10 @@ Install Erlang, Elixir and Phoenix on ElementaryOS, after clean install
 
 Note: need to set the sh files to executable.
 
- - ./install.sh
- - ./post_install.sh
+```bash
+./install.sh
+./post_install.sh
+```
 
 The first file install.sh does all the preperation
 The post_install.sh actually installs Erlang, Elixir and Phoenix using asdf.
