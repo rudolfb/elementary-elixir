@@ -22,50 +22,50 @@ sudo apt install -y software-properties-common
 
 - [x] **Install apt-fast**
 
-  ```bash
-	sudo add-apt-repository -y ppa:apt-fast/stable
-	sudo apt -y install apt-fast
-	# echo "alias apt='apt-fast'" >> ~/.bashrc
-	cd ~
-	FILE='.bashrc'
-	LINE="alias apt='apt-fast'"
-	grep -xqF -- "$LINE" "$FILE" || echo -e "\n$LINE" | tee --append "$FILE"
-	source ~/.bashrc
-  ```
+```bash
+sudo add-apt-repository -y ppa:apt-fast/stable
+sudo apt -y install apt-fast
+# echo "alias apt='apt-fast'" >> ~/.bashrc
+cd ~
+FILE='.bashrc'
+LINE="alias apt='apt-fast'"
+grep -xqF -- "$LINE" "$FILE" || echo -e "\n$LINE" | tee --append "$FILE"
+source ~/.bashrc
+```
 
 - [x] **Update OS**
 
-	```bash
-	sudo apt -y update && sudo apt -y upgrade
-	```
+```bash
+sudo apt -y update && sudo apt -y upgrade
+```
 
 - [x] **Install git et. al.**
 
-	```bash
-	sudo apt -y install \
-            git nano inotify-tools curl wget \
-            firefox gdebi synaptic vlc chromium-browser \
-            snap snapd-xdg-open \
-            traceroute net-tools whois \
-            pptpd ppp pptp-linux \
-            default-jdk
-	```
+```bash
+sudo apt -y install \
+  git nano inotify-tools curl wget \
+  firefox gdebi synaptic vlc chromium-browser \
+  snap snapd-xdg-open \
+  traceroute net-tools whois \
+  pptpd ppp pptp-linux \
+  default-jdk
+```
 
 - [x] **Uninstall Apps**
 
-	```bash
-	sudo apt -y purge epiphany-browser epiphany-browser-data
-	sudo apt -y purge pantheon-mail
-	# sudo apt -y purge noise
-	# sudo apt -y purge audience
-	```
+```bash
+sudo apt -y purge epiphany-browser epiphany-browser-data
+sudo apt -y purge pantheon-mail
+# sudo apt -y purge noise
+# sudo apt -y purge audience
+```
 
 - [x] **Clean Up OS**
 
-	```bash
-	sudo apt -y autoremove
-	sudo apt -y autoclean
-	```
+```bash
+sudo apt -y autoremove
+sudo apt -y autoclean
+```
 
 ---
 
@@ -73,12 +73,12 @@ sudo apt install -y software-properties-common
 
 - [x] **Add minimize button**
 
-	```bash
-	sudo add-apt-repository ppa:philip.scott/elementary-tweaks
-	sudo apt -y update && sudo apt -y install elementary-tweaks
-	```
-	- then do `System Settings`>`Tweaks`>`Appearance`>`Window Controls` and
-	set the **Layout** value to **Ubuntu** or **Minimize Left**
+```bash
+sudo add-apt-repository ppa:philip.scott/elementary-tweaks
+sudo apt -y update && sudo apt -y install elementary-tweaks
+```
+- then do `System Settings`>`Tweaks`>`Appearance`>`Window Controls` and
+  set the **Layout** value to **Ubuntu** or **Minimize Left**
 
 
 - [x] **Firefox**
