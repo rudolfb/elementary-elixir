@@ -6,6 +6,7 @@ Note: need to set the sh files to executable.
 ```bash
 ./install.sh
 ./post_install.sh
+./ubuntu_wsl_install.sh
 ```
 
 The first file install.sh does all the preperation
@@ -18,19 +19,6 @@ The post_install.sh actually installs Erlang, Elixir and Phoenix using asdf.
 ```bash
 sudo apt -y update
 sudo apt install -y software-properties-common
-```
-
-- [x] **Install apt-fast**
-
-```bash
-sudo add-apt-repository -y ppa:apt-fast/stable
-sudo apt -y install apt-fast
-# echo "alias apt='apt-fast'" >> ~/.bashrc
-cd ~
-FILE='.bashrc'
-LINE="alias apt='apt-fast'"
-grep -xqF -- "$LINE" "$FILE" || echo -e "\n$LINE" | tee --append "$FILE"
-source ~/.bashrc
 ```
 
 - [x] **Update OS**

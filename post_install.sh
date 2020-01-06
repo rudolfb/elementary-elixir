@@ -13,4 +13,4 @@ asdf global elixir 1.9.4-otp-22
 # Phoenix
 mix do local.hex --force , \
      local.rebar --force , \
-
+     archive.install hex phx_new 1.4.11

@@ -7,18 +7,18 @@ sudo apt install -y software-properties-common
 
 # Install git et. al.
 sudo apt -y install \
-        git nano inotify-tools curl wget \
-        firefox gdebi synaptic vlc chromium-browser \
-        snap snapd-xdg-open \
-        traceroute net-tools whois \
-        pptpd ppp pptp-linux \
-        default-jdk
+  git nano inotify-tools curl wget \
+  firefox gdebi synaptic vlc chromium-browser \
+  snap snapd-xdg-open \
+  traceroute net-tools whois \
+  pptpd ppp pptp-linux \
+  default-jdk
 
 # Prerequisites for Erlang
 sudo apt -y install build-essential autoconf \
-        m4 libncurses5-dev libwxgtk3.0-dev libgl1-mesa-dev \
-        libglu1-mesa-dev libpng-dev libssh-dev \
-        unixodbc-dev xsltproc fop
+  m4 libncurses5-dev libwxgtk3.0-dev libgl1-mesa-dev \
+  libglu1-mesa-dev libpng-dev libssh-dev \
+  unixodbc-dev xsltproc fop
 
 # Uninstall Apps
 sudo apt -y purge epiphany-browser epiphany-browser-data
@@ -60,7 +60,7 @@ sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/v
 sudo apt -y update
 sudo apt -y install code
 
-read -p "Press [Enter] key to start asdf install ..."
+# read -p "Press [Enter] key to start asdf install ..."
 
 # asdf
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.7.6
