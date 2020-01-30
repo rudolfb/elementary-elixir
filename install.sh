@@ -10,7 +10,7 @@ sudo apt -y install \
   git nano inotify-tools curl wget \
   firefox gdebi synaptic vlc chromium-browser \
   snap snapd-xdg-open \
-  traceroute net-tools whois \
+  traceroute net-tools whois libxml2-utils\
   pptpd ppp pptp-linux \
   default-jdk
 
