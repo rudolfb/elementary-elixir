@@ -10,7 +10,7 @@ sudo apt -y install \
   git nano inotify-tools curl wget \
   firefox gdebi synaptic vlc chromium-browser \
   snap snapd-xdg-open \
-  traceroute net-tools whois libxml2-utils\
+  traceroute net-tools whois \
   pptpd ppp pptp-linux \
   default-jdk
 
@@ -18,7 +18,7 @@ sudo apt -y install \
 sudo apt -y install build-essential autoconf \
   m4 libncurses5-dev libwxgtk3.0-dev libgl1-mesa-dev \
   libglu1-mesa-dev libpng-dev libssh-dev \
-  unixodbc-dev xsltproc fop
+  unixodbc-dev xsltproc fop libxml2-utils
 
 # Uninstall Apps
 sudo apt -y purge epiphany-browser epiphany-browser-data
